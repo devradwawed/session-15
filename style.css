@@ -1,0 +1,101 @@
+* , body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ktmoto{
+  background: #313131;
+  padding: 100px 0;
+}
+.ktmoto .container {
+  margin: auto;
+  width: 85% ;
+  overflow: hidden;
+}
+.ktmoto .container .box {
+  float: left;
+  width: 23%;
+  background-color: #ccc;
+  position: relative;
+  overflow: hidden;
+  margin-right: 19px;
+  margin-bottom: 20px;
+}
+.ktmoto .container .box .body{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: #5b5b6b8f;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+.ktmoto .container .box:hover .body{
+  left: 0;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform-origin: bottom left;
+}
+.ktmoto .container .box .body h2{
+  background: #cc4;
+  padding: 13px;
+  position: relative;
+  left: 100%;
+  transition: all 1s 1.1s ease;
+  -webkit-transition: all 1s 1.1s ease;
+  -moz-transition: all 1s 1.1s ease;
+  -ms-transition: all 1s 1.1s ease;
+  -o-transition: all 1s 1.1s ease;
+}
+.ktmoto .container .box:hover .body h2{
+  left: 0;
+}
+.ktmoto .container .box .body p{
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.ktmoto .container .box img{
+  width: 100%;
+  transition: all 1s 1s ease;
+  -webkit-transition: all 1s 1s ease;
+  -moz-transition: all 1s 1s ease;
+  -ms-transition: all 1s 1s ease;
+  -o-transition: all 1s 1s ease;
+}
+.ktmoto .container .box:hover img{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+
+
+
+.main{
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  animation-name: ktmoto;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes ktmoto {
+  0%{background-image: url("./img/slide-1.jpg")}
+  50%{background-image: url("./img/slide-2.jpg")}
+  100%{background-image: url("./img/slide-3.jpg")}
+}
